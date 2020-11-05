@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="#">
+    <meta name="description" content="#">
+    <link rel="stylesheet" href="#" type="text/css">
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            margin: 200px auto;
+            border: 5px solid black;
+            transition: all 1s;
+            
+        }
+        div:hover{
+            transform: rotate(360deg) scale(1.5,1.5);
+            transition: all 1s;
+            
+            animation: my 3s ease infinite alternate running;
+        }
+        @keyframes my{
+            0%    {background-color: aqua;}
+            25%   {background-color: #fff;}
+            50%   {background-color: rgb(0, 182, 61);}
+            75%   {background-color: rgb(206, 94, 94);}
+            100%  {background-color: rgb(230, 94, 173);}
+        }
+    </style>
+</head>
+<body>
+    <div class="a"> </div>
+</body>
+</html>
